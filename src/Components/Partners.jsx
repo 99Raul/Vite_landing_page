@@ -3,6 +3,8 @@ import Paper from '@mui/material/Paper';
 import Stack from '@mui/material/Stack';
 import { styled } from '@mui/material/styles';
 import Avatar from '@mui/material/Avatar';
+import Ibewlogo from '../assets/ibew_569_logo.png';
+import Sdlogo from '../assets/SanDiego_construction_council_logo.png';
 
 const Item = styled(Paper)(({ theme }) => ({
 	backgroundColor: theme.palette.mode === 'dark' ? '#616161' : '#616161',
@@ -23,13 +25,11 @@ const Partners = () => {
 				divider={<Divider orientation='vertical' flexItem />}
 				spacing={2}
 				justifyContent='center'
+				sx={{ mt: 2 }}
 			>
-				<Avatar alt='Ibew 569' src='/src/assets/ibew_569_logo.png' />
+				<Avatar alt='Ibew 569' src={Ibewlogo} />
 				<Item>Ibew 569</Item>
-				<Avatar
-					alt='SD'
-					src='/src/assets/SanDiego_construction_council_logo.png'
-				/>
+				<Avatar alt='SD' src={Sdlogo} />
 				<Item>SD Trades Council</Item>
 			</Stack>
 		</div>
