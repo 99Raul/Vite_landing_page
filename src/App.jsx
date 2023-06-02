@@ -29,8 +29,4 @@ function App() {
 
 export default App;
 
-/* <About />
-<Work />
-<Partners />
-<Divider sx={{ mt: 10 }} />
-<Footer /> */
+

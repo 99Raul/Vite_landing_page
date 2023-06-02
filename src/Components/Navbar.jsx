@@ -22,6 +22,9 @@ import { MenuList } from '@mui/material';
 import { Divider } from '@mui/material';
 import ContactPageIcon from '@mui/icons-material/ContactPage';
 import WhiteShark from '../assets/white_logo.svg';
+import PortraitIcon from '@mui/icons-material/Portrait';
+import EventIcon from '@mui/icons-material/Event';
+import WorkIcon from '@mui/icons-material/Work';
 
 const Navbar = () => {
 	const [anchorElNav, setAnchorElNav] = useState(null);
@@ -35,10 +38,14 @@ const Navbar = () => {
 	};
 
 	return (
-		<AppBar position='static' sx={{ bgcolor: '#212121' }}>
+		<AppBar position='sticky' sx={{ bgcolor: '#212121' }}>
 			<Container maxWidth='xl'>
 				<Toolbar disableGutters>
-					<Box>
+					<Box
+						sx={{
+							display: { xs: 'flex', md: 'none', sm: 'none', lg: 'none' },
+						}}
+					>
 						<IconButton
 							size='large'
 							aria-label='sub-menu'
@@ -122,6 +129,36 @@ const Navbar = () => {
 					</Typography>
 					<Box sx={{ flexGrow: 14 }} />
 					<Link
+						href='/members'
+						color='#ffffff'
+						sx={{ display: { xs: 'none', sm: 'block' } }}
+					>
+						<Button sx={{ color: '#fff' }} size='small'>
+							<PortraitIcon sx={{ height: 20, width: 20, mr: 0.3 }} />
+							<Typography variant='button'>Members</Typography>
+						</Button>
+					</Link>
+					<Link
+						href='/mission'
+						color='#ffffff'
+						sx={{ display: { xs: 'none', sm: 'block' } }}
+					>
+						<Button sx={{ color: '#fff' }} size='small'>
+							<WorkIcon sx={{ height: 20, width: 20, mr: 0.3 }} />
+							<Typography variant='button'>Mission</Typography>
+						</Button>
+					</Link>
+					<Link
+						href='/events'
+						color='#ffffff'
+						sx={{ display: { xs: 'none', sm: 'block' } }}
+					>
+						<Button sx={{ color: '#fff' }} size='small'>
+							<EventIcon sx={{ height: 20, width: 20, mr: 0.3 }} />
+							<Typography variant='button'>Events</Typography>
+						</Button>
+					</Link>
+					<Link
 						href='/contact'
 						color='#ffffff'
 						sx={{ display: { xs: 'none', sm: 'block' } }}
@@ -132,7 +169,7 @@ const Navbar = () => {
 						</Button>
 					</Link>
 					<Box sx={{ flexGrow: 1 }} />
-					<Box sx={{ display: { xs: 'none', md: 'flex' } }}>
+					<Box sx={{ display: { xs: 'none', md: 'flex', sm: 'none' } }}>
 						<IconButton
 							size='large'
 							aria-label='show 4 new mails'

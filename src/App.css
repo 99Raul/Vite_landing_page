@@ -18,7 +18,7 @@ img {
 
 .App {
 	min-height: 100vh;
-	width: 85vw;
+	/* width: 85vw; */
 	max-width: 1900px;
 	margin: 0rem auto;
 }
@@ -97,6 +97,7 @@ img.logo {
 .home-image-section {
 	max-width: 600px;
 	flex: 1;
+	margin-right: 2rem;
 }
 
 .home-text-section {
@@ -202,6 +203,7 @@ img.logo {
 .about-section-image-container {
 	flex: 0.9;
 	margin-right: 1rem;
+	margin-left: 1rem;
 }
 
 .about-section-text-container {
@@ -216,6 +218,10 @@ img.logo {
 	font-weight: 700;
 	color: #616161;
 	font-size: 1.15rem;
+}
+
+.about-section-container {
+	margin-top: 9rem;
 }
 
 .contact-page-wrapper h1 {
@@ -368,6 +374,8 @@ img.logo {
 
 .carousel {
 	margin-top: 20px;
+	margin-left: 1rem;
+	margin-right: 1rem;
 }
 .primary-subheading-carousel {
 	font-weight: 700;
@@ -600,7 +608,7 @@ img.logo {
 	}
 
 	.about-section-image-container {
-		margin-right: 0rem !important;
+		/* margin-right: 0rem !important; */
 	}
 
 	.work-section-wrapper {
@@ -652,12 +660,16 @@ img.logo {
 		width: 290px;
 	}
 	.home-image-section {
-		display: none;
+		display: 'flex';
+		margin-left: 2rem;
 	}
 	.about-section-text-container {
 		margin-top: 5px;
 	}
 	.pics {
 		margin-bottom: 5px;
+	}
+	.about-section-image-container {
+		margin-bottom: 2rem;
 	}
 }
