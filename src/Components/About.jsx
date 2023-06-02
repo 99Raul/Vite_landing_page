@@ -4,11 +4,8 @@ import AboutBackgroundImage from '../assets/labor_pic3_.png';
 const About = () => {
 	return (
 		<div className='about-section-container'>
-			{/* <div className="about-background-image-container">
-        <img  src={AboutBackground} alt="" />
-      </div> */}
 			<div className='about-section-image-container'>
-				<img className='pics' src={AboutBackgroundImage} alt='' />
+				<img className='pics' src={AboutBackgroundImage} alt='picture' />
 			</div>
 			<div className='about-section-text-container'>
 				<p className='primary-subheading'>About</p>
@@ -21,16 +18,6 @@ const About = () => {
 					to secure sustainable employment, gain financial independence, and
 					establish a successful career in the construction industry.
 				</p>
-				{/* <p className="primary-text">
-          Non tincidunt magna non et elit. Dolor turpis molestie dui magnis
-          facilisis at fringilla quam.
-        </p> */}
-				{/* <div className="about-buttons-container">
-          <button className="secondary-button">Learn More</button>
-          <button className="watch-video-button">
-            <BsFillPlayCircleFill /> Watch Video
-          </button>
-        </div> */}
 			</div>
 		</div>
 	);

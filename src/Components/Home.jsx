@@ -1,30 +1,44 @@
 import Navbar from './Navbar.jsx';
 // import BannerBackground from '../assets/home-banner-background2_.png'
 import BannerImage from '../assets/labor_pic4_.png';
+import Work from './Work.jsx';
+import Partners from './Partners.jsx';
+import About from './About.jsx';
+import Slider2 from './Slider/Slider2.jsx';
+// import WhiteLogo from '../assets/white_shark2.svg';
 
 const Home = () => {
 	return (
-		<div className='home-container'>
-			<Navbar />
-			<div className='home-banner-container'>
-				{/* <div className='home-bannerImage-container'>
+		<>
+			<div className='home-container'>
+				<Navbar />
+				<div className='home-banner-container'>
+					{/* <div className='home-bannerImage-container'>
 					<img src={BannerBackground} alt='' />
 				</div> */}
-				<div className='about-section-text-container'>
-					<h1 className='primary-heading'>Freedom looks good on you</h1>
-					<p className='primary-text'>
-						HomeworkSD focuses on assisting formerly incarcerated men and women
-						to reintegrate into their communities.Through targeted training
-						programs, job placement assistance, and supportive services, the
-						group aims to bridge the gap between the construction industry and
-						formerly incarcerated individuals.
-					</p>
-				</div>
-				<div className='home-image-section'>
-					<img className='pics' src={BannerImage} alt='' />
+					<div className='about-section-text-container'>
+						{/* <img src={WhiteLogo} className='white_shark2' /> */}
+						<h1 className='primary-heading'>Freedom looks good on you </h1>
+						<p className='primary-text'>
+							HoMEwork focuses on assisting formerly incarcerated men and women
+							to reintegrate into their communities
+						</p>
+						{/*Through targeted training
+							programs, job placement assistance, and supportive services, the
+							group aims to bridge the gap between the construction industry and
+							formerly incarcerated individuals. */}
+					</div>
+					<div className='home-image-section'>
+						<img className='pics' src={BannerImage} alt='' />
+					</div>
 				</div>
 			</div>
-		</div>
+
+			<About />
+			<Work />
+			<Slider2 />
+			<Partners />
+		</>
 	);
 };
 

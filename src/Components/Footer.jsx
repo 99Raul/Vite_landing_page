@@ -31,10 +31,10 @@ const Footer = () => {
 			<div className='footer-section-two'>
 				<LocationOnIcon sx={{ height: 25, width: 25, mt: 0.5, mr: 0.3 }} />
 				<div className='footer-section-columns'>
-					<span>Jackie Robinson</span>
-					<span>151 YMCA,</span>
+					<span>3737 Camino de Rio S </span>
+					<span>Suite 202</span>
 					<span>San Diego</span>
-					<span>Ca, 92102</span>
+					<span>Ca, 92108</span>
 				</div>
 				<ContactPhoneIcon sx={{ height: 25, width: 25, mr: 1.5, mt: 0.5 }} />
 				<div className='footer-section-columns'>
