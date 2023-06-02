@@ -1,10 +1,12 @@
 // import AboutBackground from '../assets/about-background3.png'
 import AboutBackgroundImage from '../assets/labor_pic3_.png';
 
+
 const About = () => {
 	return (
 		<div className='about-section-container'>
 			<div className='about-section-image-container'>
+				{/* <img className='pics' src={AboutBackgroundImage} alt='picture' /> */}
 				<img className='pics' src={AboutBackgroundImage} alt='picture' />
 			</div>
 			<div className='about-section-text-container'>
@@ -24,7 +26,3 @@ const About = () => {
 };
 
 export default About;
-
-
-
-
