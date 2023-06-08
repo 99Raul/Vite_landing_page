@@ -8,11 +8,33 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import Popover from '@mui/material/Popover';
 import PlaylistAddCheckIcon from '@mui/icons-material/PlaylistAddCheck';
+import PermMediaIcon from '@mui/icons-material/PermMedia';
 import Divider from '@mui/material/Divider';
+import Modal from '@mui/material/Modal';
+import Box from '@mui/material/Box';
+import CardSlider from './ModalSliders/CardSlider';
+
+const style = {
+	position: 'absolute',
+	top: '50%',
+	left: '50%',
+	transform: 'translate(-50%, -50%)',
+	width: 570,
+	height: 450,
+	bgcolor: 'background.paper',
+	border: '2px solid #000',
+	boxShadow: 24,
+	p: 4,
+	'@media (max-width: 395px)': {
+		width: '370px',
+	},
+};
 
 const Work = () => {
 	const [anchorEl, setAnchorEl] = useState(null);
 	const [anchorEl4, setAnchorEl4] = useState(null);
+
+	const [modalOpen, setModalOpen] = useState(false);
 
 	const handleClick = (event) => {
 		setAnchorEl(event.currentTarget);
@@ -28,6 +50,9 @@ const Work = () => {
 	const handleClose4 = () => {
 		setAnchorEl4(null);
 	};
+
+	const handleModalOpen = () => setModalOpen(true);
+	const handleModalClose = () => setModalOpen(false);
 
 	const open = Boolean(anchorEl);
 	const id = open ? 'simple-popover' : undefined;
@@ -91,6 +116,35 @@ const Work = () => {
 							Progressive Labor Summit, April 29 2023
 						</Typography>
 					</Popover>
+				</div>
+			),
+			mdl: (
+				<div>
+					<Button
+						onClick={handleModalOpen}
+						variant='contained'
+						sx={{ mt: 0.7 }}
+					>
+						<PermMediaIcon sx={{ mr: 0.3 }} />
+						Images
+					</Button>
+					<Modal
+						open={modalOpen}
+						onClose={handleModalClose}
+						aria-labelledby='modal-modal-title'
+						aria-describedby='modal-modal-description'
+						sx={{}}
+					>
+						<Box sx={style}>
+							<Typography id='modal-modal-title' variant='h6' component='h2'>
+								Text in a modal
+							</Typography>
+							<Typography id='modal-modal-description' sx={{ mt: 2 }}>
+								Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+							</Typography>
+							<CardSlider />
+						</Box>
+					</Modal>
 				</div>
 			),
 		},
@@ -168,6 +222,7 @@ const Work = () => {
 						<h2>{data.title}</h2>
 						<p>{data.text}</p>
 						{data.btn}
+						{data.mdl}
 						{data.btn4}
 					</div>
 				))}

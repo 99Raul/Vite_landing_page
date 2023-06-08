@@ -38,7 +38,7 @@ const Navbar = () => {
 	};
 
 	return (
-		<AppBar position='sticky' sx={{ bgcolor: '#212121' }}>
+		<AppBar position='fixed' sx={{ bgcolor: '#212121' }}>
 			<Container maxWidth='xl'>
 				<Toolbar disableGutters>
 					<Box
@@ -81,7 +81,7 @@ const Navbar = () => {
 									// will be passed down to the Link component
 									href='/members'
 								>
-									Members
+									Our Team
 								</MenuItem>
 								<Divider />
 								<MenuItem component={Link} href='/mission'>
@@ -135,7 +135,7 @@ const Navbar = () => {
 					>
 						<Button sx={{ color: '#fff' }} size='small'>
 							<PortraitIcon sx={{ height: 20, width: 20, mr: 0.3 }} />
-							<Typography variant='button'>Members</Typography>
+							<Typography variant='button'>Team</Typography>
 						</Button>
 					</Link>
 					<Link

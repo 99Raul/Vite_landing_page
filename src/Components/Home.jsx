@@ -1,6 +1,6 @@
 import Navbar from './Navbar.jsx';
 // import BannerBackground from '../assets/home-banner-background2_.png'
-import BannerImage from '../assets/labor_pic4_.png';
+// import BannerImage from '../assets/labor_pic4_.png';
 import Work from './Work.jsx';
 import Partners from './Partners.jsx';
 import About from './About.jsx';

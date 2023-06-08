@@ -7,7 +7,7 @@ const Mission = () => {
 	return (
 		<div>
 			<Navbar />
-			<Box justifyContent='center' display='flex'>
+			<Box justifyContent='center' display='flex' sx={{ mt: 7 }}>
 				<Paper
 					elevation={3}
 					display='inline-block'

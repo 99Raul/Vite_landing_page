@@ -42,8 +42,8 @@ const Members = () => {
 		<div>
 			<Navbar />
 			<div className='member_team'>
-				<Typography variant='h3' sx={{ mt: 3 }}>
-					Members
+				<Typography variant='h3' sx={{ mt: 14 }}>
+					Our Team
 				</Typography>
 			</div>
 			<Grid sx={{ flexGrow: 1, mt: 7 }} container spacing={2}>

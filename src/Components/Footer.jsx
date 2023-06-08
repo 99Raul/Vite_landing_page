@@ -33,14 +33,13 @@ const Footer = () => {
 				<div className='footer-section-columns'>
 					<span>3737 Camino de Rio S </span>
 					<span>Suite 202</span>
-					<span>San Diego</span>
-					<span>Ca, 92108</span>
+					<span>San Diego Ca, 92108</span>
 				</div>
-				<ContactPhoneIcon sx={{ height: 25, width: 25, mr: 1.5, mt: 0.5 }} />
+				<ContactPhoneIcon sx={{ height: 25, width: 25, mr: 1.1, mt: 0.5 }} />
 				<div className='footer-section-columns'>
 					<span>(707) 469-3597</span>
 				</div>
-				<EmailIcon sx={{ height: 25, width: 25, mr: 1, mt: 0.3 }} />
+				<EmailIcon sx={{ height: 25, width: 25, mr: 0.5, mt: 0.3 }} />
 				<div className='footer-section-columns'>
 					<span>homeworksd4@gmail.com</span>
 				</div>

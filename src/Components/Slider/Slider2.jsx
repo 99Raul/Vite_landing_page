@@ -2,9 +2,11 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import H1 from '../../assets/hw_sd1.png';
 import H2 from '../../assets/hw_sd2.png';
-import H3 from '../../assets/hw_sd3.png';
-import H4 from '../../assets//hw_sd4.png';
-import H6 from '../../assets/hw_sd52.png';
+// import H3 from '../../assets/hw_sd3.png';
+// import H4 from '../../assets//hw_sd4.png';
+import H6 from '../../assets/hw_sd5.1.png';
+import H33 from '../../assets/hw_sd3.3.png';
+import H4_1 from '../../assets/hw_sd4.1.png';
 
 const Slider2 = () => {
 	return (
@@ -68,10 +70,10 @@ const Slider2 = () => {
 					<img className='gallery_slides_img' src={H2} />
 				</div>
 				<div className='gallery_slides'>
-					<img className='gallery_slides_img' src={H3} />
+					<img className='gallery_slides_img' src={H33} />
 				</div>
 				<div className='gallery_slides'>
-					<img className='gallery_slides_img' src={H4} />
+					<img className='gallery_slides_img' src={H4_1} />
 				</div>
 				<div className='gallery_slides'>
 					<img className='gallery_slides_img' src={H6} />

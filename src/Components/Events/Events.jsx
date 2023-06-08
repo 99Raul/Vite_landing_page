@@ -43,7 +43,7 @@ const Events = () => {
 				<Navbar />
 				<Box
 					sx={{
-						mt: 4,
+						mt: 14,
 						display: 'flex',
 						justifyContent: 'center',
 					}}
@@ -62,7 +62,7 @@ const Events = () => {
 		return (
 			<div>
 				<Navbar />
-				<Box sx={{ mt: 4, display: 'flex', justifyContent: 'center' }}>
+				<Box sx={{ mt: 14, display: 'flex', justifyContent: 'center' }}>
 					<CircularProgress />
 					<Typography variant='h5' sx={{ ml: 2, mt: 0.4 }}>
 						Loading...
@@ -70,6 +70,19 @@ const Events = () => {
 				</Box>
 			</div>
 		);
+
+	if (data.events.length === 0)
+		return (
+			<div>
+				<Navbar />
+				<Box sx={{ mt: 14, display: 'flex', justifyContent: 'center' }}>
+					<Typography variant='h5' sx={{ ml: 2, mt: 0.4 }}>
+						please check again later for events
+					</Typography>
+				</Box>
+			</div>
+		);
+
 	// Show the response if everything is fine
 
 	return (
@@ -81,7 +94,7 @@ const Events = () => {
 				return (
 					<Box
 						key={evt.category_id}
-						sx={{ mt: 4, display: 'flex', justifyContent: 'center' }}
+						sx={{ mt: 14, display: 'flex', justifyContent: 'center' }}
 					>
 						<Card sx={{ maxWidth: 600 }}>
 							<CardMedia
@@ -91,11 +104,13 @@ const Events = () => {
 								title='Card media'
 							/>
 							<CardContent>
-								<Typography sx={{ mt: 1, fontWeight: 'bold' }}>
+								<Typography sx={{ mt: 1, fontWeight: 'bold' }} variant='h6'>
 									{evt.name.text}
 								</Typography>
 								<Typography sx={{ mt: 1 }}>
-									{new Date(evt.end.local).toDateString()}
+									{new Date(evt.start.local).toDateString()}
+									{', '}
+									{new Date(evt.start.local).toLocaleTimeString()}
 								</Typography>
 								<Typography sx={{ mt: 1 }}>{evt.description.text}</Typography>
 							</CardContent>
