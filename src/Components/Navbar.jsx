@@ -131,7 +131,10 @@ const Navbar = () => {
 					<Link
 						href='/members'
 						color='#ffffff'
-						sx={{ display: { xs: 'none', sm: 'block' } }}
+						sx={{
+							display: { xs: 'none', sm: 'block' },
+							textDecoration: 'none',
+						}}
 					>
 						<Button sx={{ color: '#fff' }} size='small'>
 							<PortraitIcon sx={{ height: 20, width: 20, mr: 0.3 }} />
@@ -141,7 +144,10 @@ const Navbar = () => {
 					<Link
 						href='/mission'
 						color='#ffffff'
-						sx={{ display: { xs: 'none', sm: 'block' } }}
+						sx={{
+							display: { xs: 'none', sm: 'block' },
+							textDecoration: 'none',
+						}}
 					>
 						<Button sx={{ color: '#fff' }} size='small'>
 							<WorkIcon sx={{ height: 20, width: 20, mr: 0.3 }} />
@@ -151,7 +157,10 @@ const Navbar = () => {
 					<Link
 						href='/events'
 						color='#ffffff'
-						sx={{ display: { xs: 'none', sm: 'block' } }}
+						sx={{
+							display: { xs: 'none', sm: 'block' },
+							textDecoration: 'none',
+						}}
 					>
 						<Button sx={{ color: '#fff' }} size='small'>
 							<EventIcon sx={{ height: 20, width: 20, mr: 0.3 }} />
@@ -161,7 +170,10 @@ const Navbar = () => {
 					<Link
 						href='/contact'
 						color='#ffffff'
-						sx={{ display: { xs: 'none', sm: 'block' } }}
+						sx={{
+							display: { xs: 'none', sm: 'block' },
+							textDecoration: 'none',
+						}}
 					>
 						<Button sx={{ color: '#fff' }} size='small'>
 							<ContactPageIcon sx={{ height: 20, width: 20 }} />
