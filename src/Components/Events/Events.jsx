@@ -115,7 +115,7 @@ const Events = () => {
 								<Typography sx={{ mt: 1 }}>{evt.description.text}</Typography>
 							</CardContent>
 							<CardActions>
-								<Link href={evt.url}>
+								<Link href={evt.url} sx={{ textDecoration: 'none' }}>
 									<Button
 										variant='contained'
 										sx={{ backgroundColor: '#fe902d', color: 'black' }}

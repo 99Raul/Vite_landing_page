@@ -1,32 +1,70 @@
-import Card from '@mui/material/Card';
-import CardMedia from '@mui/material/CardMedia';
-import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
+import Container from '@mui/material/Container';
+import Box from '@mui/material/Box';
+import Paper from '@mui/material/Paper';
+import PropTypes from 'prop-types';
 
-export default function SliderDetails(props) {
+export default function SliderDetails({ description, image }) {
+	// console.log(image);
 	return (
-		<Card
+		<Container
 			sx={{
-				maxWidth: 390,
+				'@media (max-width:530px)': {
+					height: 450,
+					width: 480,
+				},
+				'@media (max-width:415px)': {
+					height: 400,
+					width: 400,
+				},
+				'@media (max-width:390px)': {
+					height: 400,
+					width: 380,
+				},
 			}}
 		>
-			<CardMedia
+			<Paper
+				square
+				elevation={0}
 				sx={{
-					height: 233,
-					width: 390,
+					display: 'flex',
+					alignItems: 'center',
+					height: 50,
+					pl: 2,
+					bgcolor: '#212121',
 				}}
-				component='img'
-				src={props.image}
-				alt='pictures from homework sd non profit'
-			/>
-			<CardContent>
-				<Typography variant='body2' color='text.secondary'>
-					{props.description}
+			>
+				<Typography variant='body2' sx={{ color: 'white' }}>
+					{description}
 				</Typography>
-			</CardContent>
-		</Card>
+			</Paper>
+			<Box
+				component='img'
+				sx={{
+					height: 500,
+					display: 'block',
+					maxWidth: 700,
+					overflow: 'hidden',
+					width: '100%',
+					'@media (max-width:415px)': {
+						height: 400,
+						width: 368,
+					},
+					'@media (max-width:390px)': {
+						height: 300,
+						width: 348,
+					},
+				}}
+				src={image}
+				alt={description}
+			></Box>
+		</Container>
 	);
 }
+SliderDetails.propTypes = {
+	image: PropTypes.string,
+	description: PropTypes.string,
+};
 
 // '@media (max-width:230px)': {
 // 					width: 225,

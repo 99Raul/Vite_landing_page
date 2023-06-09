@@ -4,9 +4,10 @@ import Navbar from './Navbar.jsx';
 import Work from './Work.jsx';
 import Partners from './Partners.jsx';
 import About from './About.jsx';
-import Slider2 from './Slider/Slider2.jsx';
 // import WhiteLogo from '../assets/white_shark2.svg';
 import SharkLogo from '../assets/shark_logo.png';
+import Slider1 from './Slider/Slider.jsx';
+// import MaterialSlider from './Slider/MaterialSlider.jsx';
 
 const Home = () => {
 	return (
@@ -20,8 +21,8 @@ const Home = () => {
 					<div className='about-section-text-container'>
 						{/* <img src={WhiteLogo} className='white_shark2' /> */}
 						<h1 className='primary-heading'>
-							Our vision is to change the narrative of what it means to be formerly
-							incarcerated{' '}
+							Our vision is to change the narrative of what it means to be
+							formerly incarcerated{' '}
 						</h1>
 						<p className='primary-text'>
 							HoMEwork focuses on assisting formerly incarcerated men and women
@@ -41,7 +42,8 @@ const Home = () => {
 
 			<About />
 			<Work />
-			<Slider2 />
+			{/* <MaterialSlider /> */}
+			<Slider1 />
 			<Partners />
 		</>
 	);

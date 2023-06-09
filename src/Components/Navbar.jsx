@@ -39,7 +39,7 @@ const Navbar = () => {
 
 	return (
 		<AppBar position='fixed' sx={{ bgcolor: '#212121' }}>
-			<Container maxWidth='xl'>
+			<Container maxWidth='xl' disableGutters={true}>
 				<Toolbar disableGutters>
 					<Box
 						sx={{
@@ -160,6 +160,7 @@ const Navbar = () => {
 						sx={{
 							display: { xs: 'none', sm: 'block' },
 							textDecoration: 'none',
+							justifyContent: 'center',
 						}}
 					>
 						<Button sx={{ color: '#fff' }} size='small'>
@@ -191,38 +192,36 @@ const Navbar = () => {
 								href='https://www.facebook.com/homeworksd/'
 								target='_blank'
 								color='inherit'
+								sx={{ display: 'flex', mr: 0.5 }}
 							>
 								<FacebookIcon
 									sx={{
 										height: 25,
 										width: 25,
-										mr: 1,
-										mt: 0.8,
 										color: ' rgb(23, 169, 253)',
 									}}
 								/>
 							</Link>
-
 							<Link
 								color='inherit'
 								href='https://twitter.com/homework_sd?lang=en'
 								target='_blank'
+								sx={{ display: 'flex', mr: 0.5 }}
 							>
 								<TwitterIcon
 									sx={{
 										height: 25,
 										width: 25,
-										mr: 1,
 										color: '#1DA1F2',
 										display: { xs: 'none', md: 'flex' },
 									}}
 								/>
 							</Link>
-
 							<Link
 								href='https://www.instagram.com/homeworksd/'
 								target='_blank'
 								color='inherit'
+								sx={{ display: 'flex', mr: 0.5 }}
 							>
 								<InstagramIcon
 									sx={{
